@@ -4,6 +4,8 @@ In order to run the poc you have to install pache kafka.
 * install docker desktop on windows machine 
 * go to spring-cloud-config-server
 * in terminal command line enter this command: docker-compose up -d
+![image](https://user-images.githubusercontent.com/111740580/203080083-6c035d5a-c7b6-40d2-ada9-f2babf695c8e.png)
+
 * a docker image with apache kafka will be created and run
 
 The configuration file is in git-localconfig-repo.
