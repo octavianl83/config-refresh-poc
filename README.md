@@ -24,8 +24,10 @@ spring.cloud.config.server.git.uri=file:///C:/Users/lilao/IdeaProjects/springboo
 If needed mark this folder as git repository with the command: 
 * git init
 
+
 Url to check the values from configuration file:
 http://localhost:8200/limits
+
 
 In application limit-service we have application.properties and here we can change the evnironment:
 spring.cloud.config.profile=dev
