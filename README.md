@@ -12,6 +12,7 @@ The configuration file is in git-localconfig-repo.
 In the spring-cloud-config-server you have the application.properties file and you have to modify the path to the git-localconfig-repo
 The configuration file contains my path (please change accordingly):
 spring.cloud.config.server.git.uri=file:///C:/Users/lilao/IdeaProjects/springboot/git-localconfig-repo
+
 If needed mark this folder as git repository with the command: 
 * git init
 
