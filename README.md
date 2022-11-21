@@ -19,3 +19,9 @@ Below print screen from my envrioenment:
 ![image](https://user-images.githubusercontent.com/111740580/203077598-2460b5a3-3582-4bad-99cf-b60c8f608407.png)
 
 ![image](https://user-images.githubusercontent.com/111740580/203077716-bccc4b16-0312-45ca-95ef-1014a2f9dafc.png)
+
+Url to check the values from configuration file:
+http://localhost:8200/limits
+
+In application limit-service we have application.properties and here we can change the evnironment:
+spring.cloud.config.profile=dev
