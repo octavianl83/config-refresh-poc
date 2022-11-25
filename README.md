@@ -64,3 +64,5 @@ spring.cloud.config.profile=dev
 
 
 
+### Documentation:
+https://spring.io/guides/gs/centralized-configuration/
