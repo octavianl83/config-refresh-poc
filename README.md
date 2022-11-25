@@ -41,6 +41,7 @@ spring.cloud.config.server.git.uri=file:///C:/Users/lilao/IdeaProjects/springboo
 * In application.properties:
 
 spring.profiles.active=dev
+
 spring.cloud.config.profile=dev
 
 ### Starting the microservices
@@ -53,4 +54,13 @@ spring.cloud.config.profile=dev
 
 
 ### Check configuration modification in microservice api
+
+* Check local modification propagation:
+    - Check the API values in microservice: http://localhost:8200/limits-db
+    - In the local folder git-localconfig-repo change values from file limits-service-db-dev.properties
+    - Save them
+    - Wait for 10 seconds
+    - Check again the API values:  http://localhost:8200/limits-db
+
+
 
