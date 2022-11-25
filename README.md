@@ -31,3 +31,4 @@ http://localhost:8200/limits
 
 In application limit-service we have application.properties and here we can change the evnironment:
 spring.cloud.config.profile=dev
+
