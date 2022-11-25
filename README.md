@@ -1,5 +1,9 @@
 # config-refresh-poc
 
+This repo is a demo of how config-cloud from spring can be used in microservices arhitecture, in order to get the configuration from local or from remote(git) location.
+
+## Prerequisites
+
 In order to run the poc you have to install pache kafka.
 * install docker desktop on windows machine 
 * go to spring-cloud-config-server
@@ -15,19 +19,13 @@ Below print screen from my envrioenment:
 
 ![image](https://user-images.githubusercontent.com/111740580/203077716-bccc4b16-0312-45ca-95ef-1014a2f9dafc.png)
 
+## Running the microservices
 
 The configuration file is in git-localconfig-repo.
 In the spring-cloud-config-server you have the application.properties file and you have to modify the path to the git-localconfig-repo
+
 The configuration file contains my path (please change accordingly):
 spring.cloud.config.server.git.uri=file:///C:/Users/lilao/IdeaProjects/springboot/git-localconfig-repo
-
-If needed mark this folder as git repository with the command: 
-* git init
-
-
-Url to check the values from configuration file:
-http://localhost:8200/limits
-
 
 In application limit-service we have application.properties and here we can change the evnironment:
 spring.cloud.config.profile=dev
