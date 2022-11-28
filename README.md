@@ -60,9 +60,16 @@ spring.cloud.config.profile=dev
     - In the local folder git-localconfig-repo change values from file limits-service-db-dev.properties
     - Save them
     - Wait for 10 seconds
-    - Check again the API values:  http://localhost:8200/limits-db
+    - Check again the API values: http://localhost:8200/limits-db
 
-
+* Check remote(git) modification propagation:
+    - Check the API values in microservice: http://localhost:8400/limits-db
+    - Modify the file from config-repo (git repo of the config files) from file limits-service-db-dev.properties
+    - Save them and push to git
+    - Wait 20 seconds (a refresh property is set on git cloud config server)
+    - Refresh values on microservice client by calling the refresh endpoint from the actuator
+        - http://localhost:8400/actuator/refresh
+    -  Check again the API values: http://localhost:8400/limits-db
 
 ### Documentation:
 https://spring.io/guides/gs/centralized-configuration/
